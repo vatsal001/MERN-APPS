@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/170123ab60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./fonts//icons/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    /> -->
+    <style>
+      #nav {
+        background-image: url("./images/Header.png");
+      }
+      #background-guy-image {
+        background: url("./images/Slider.png") no-repeat center center/cover;
+        height: 107vh;
+      }
+      #register {
+        margin-top: 3rem;
+      
+      }
+      #buttons {
+        margin-left: 435px;
+      }
+      #a-tag {
+        margin-left: 25rem;
+      }
+      #a-tag1 {
+        margin-top: 2rem;
+        padding: 1px;
+        font-size: 25px;
+        margin-bottom: 2rem;
+      }
+      .parent {
+        padding: 20px;
+        margin-bottom: 300px;
+      }
+      .element {
+        padding: 5px;
+        margin-left: 15px;
+        position: absolute;
+      }
+      #gradient {
+        background: linear-gradient(to bottom right, rgb(235, 97, 120), white);
+        padding-bottom: 200px;
+      }
+      #footer-relative{
+        background:url('./images/Footer.png') no-repeat center center/cover ;
+      }
+      /* .gradient {
+        padding: 50px;
+      } */
+      /* #zain-life {
+        ;
+      } */
+      /* #cards {
+        
+      } */
+      #a-tag5 {
+        margin-left: 350px;
+        background-color: palevioletred;
+      }
+      #third-content {
+        margin-top: 110px;
+        margin-left: 150px;
+        display: flex;
+        flex-direction: row;
+      }
+      #third-content .content-section1 {
+        display: block;
+        width: 280px;
+        height: 250px;
+      }
+      #navbar-buttons {
+        margin-left: auto;
+      }
+      #pink-btn {
+        border: 1px palevioletred solid;
+      }
+      #button {
+        background-color: palevioletred;
+      }
+      #buy-more {
+        color: rgb(230, 89, 136);
+      }
+      .icon-sticker{
+        color: palevioletred;
+      }
+      .icon-bar {
+  width: 50%;
+  background-color: rgb(236, 244, 255);
+  overflow: auto;
+  padding: 4px;
+  margin-top: 30px;
+  /* box-shadow:1px 2px 2px 1px black; */
+  border-radius: 6px;
+  margin-left: 265px;
+}
+
+.icon-bar a {
+  float: left;
+  width: 15%;
+  text-align: center;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  color: palevioletred;
+  margin-left: 40px;
+  font-size: 30px;
+}
+
+.icon-bar a:hover {
+   background-color: rgb(196, 199, 199);
+  border-radius: 6px;
+   text-decoration: none;
+   cursor: pointer;
+  
+}
+
+.active {
+  background-color: #4CAF50;
+}
+    </style>
+  </head>
+
+  <body>
+    <nav id="nav" class="nav navbar-expand-md navbar-light">
+      <div class="container  ">
+        <a
+          href="#"
+          id="button"
+          class="navbnar-brand  btn float-left btn-pink text-white"
+          >Customer</a
+        >
+        <a href="#" class="navbnar-brand  btn float-left text-white"
+          >Business</a
+        >
+        <ul class="navbar-nav float-right">
+          <li class="nav-item">
+            <a class="nav-link text-white " href="#">quick pay</a>
+          </li>
+          <li class="nav-item">
+            <select class="nav-link btn btn-dark text-white"
+              ><option value="">kuwait</option></select
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="#">Lorem</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div id="background-guy-image">
+        <nav class="navbar nav navbar-expand-md navbar-transprent">
+          <div class="container ">
+            <img class="float-left" src="./images/zain_logo.svg" />
+            <div class="d-flex mr-2 " id="navbar-buttons">
+              <a href="#" class="btn "
+                ><h4><i class="fas fa-shopping-cart text-white"></i></h4>
+              </a>
+              <a href="#" class="btn "
+                ><h4><i class="fas fa-search text-white"></i></h4
+              ></a>
+              <a href="#" class="btn ">
+                <h4><i class="fas fa-heart text-white"></i></h4>
+              </a>
+            </div>
+            <button class="btn btn-outline-info">
+              <i class="fas fa-user-alt"></i> My Zain
+            </button>
+          </div>
+        </nav>
+
+        <div class="container text-white mt-2">
+          <h3 class="text-center p-1 mt-4">Exclusive Offer</h3>
+          <p class="display-1 text-center p-1 mt-3">
+            <b>FOR OUR LOYAL CUSTOMERS </b>
+          </p>
+          <h4 class="text-center p-1 mt-3">
+            Choose your favourite device now and add it to your current
+            Subscription
+          </h4>
+          <div class="d-flex" id="buttons">
+            <a
+              href="#"
+              class="btn btn-outline mt-5 mb-5 text-white"
+              id="pink-btn"
+              >View More</a
+            >
+            <a href="#" id="buy-more" class="btn bg-white  mt-5 mb-5 ml-3"
+              >Buy More</a
+            >
+          </div>
+        </div>
+        <div class="container">
+        <div class="icon-bar shadow">
+          <a  href="#"><i class=" icon-save-money"></i></a>
+          <a href="#"><i class="icon-smartphone"></i> </a> 
+          <a href="#"><i class="icon-smart-home"></i></a> 
+       
+          <a href="#"><i class="icon-percentage-black"></i></a> 
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container p-5">
+      <h3 class="text-center"><b>Top Pick Selected for you</b></h3>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni
+        optio alias, voluptates quod, accusantium exercitationem maiores ipsam
+        minima illo error vitae aliquam, eos quae.
+      </p>
+    </div>
+    <div class=" container  ">
+      <div class=" d-flex   ">
+        <div class="card text-dark shadow mb-2 mr-2">
+          <img class="card-img" src="./images/top-pick-01.png" alt="" />
+          <div class="card-img-overlay" id="top-pick1">
+            <div class="card-body">
+              <h4 class="card-title">Iphone 11 Pro</h4>
+              <h5 class="card-text">Coming soon</h5>
+              <div class="d-flex mt-5">
+                <a
+                  href="#"
+                  class="btn text-white "
+                  style="background-color:  rgb(230, 89, 136);"
+                  id="register"
+                  >Register Now</a
+                >
+                <a href="#" class="p-1 ml-5 " id="register">All Smart Phones</a>
+                <span class="p-1 text-dark" id="register">&raquo;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card text-white shadow mb-2">
+          <img class="card-img" src="./images/top-pick-02.png" alt="" />
+          <div class="card-img-overlay" id="top=pick2">
+            <div class="card-body">
+              <h4 class="card-title">5G Plans</h4>
+              <h5 class="card-text ">Starting from KD 35 Monthly</h5>
+              <div class="d-flex mt-5">
+                <a
+                  href="#"
+                  class="btn text-white "
+                  style="background-color:  rgb(230, 89, 136);"
+                  id="register"
+                  >View Details</a
+                >
+                <a href="#" class="p-1 ml-5 " id="register">View all Plans</a>
+                <span class="p-1 text-white" id="register">&raquo;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card text-white container shadow p-1  ">
+        <img class="card-img" src="./images/top-pick-03.png" alt="" />
+        <div class="card-img-overlay" id="top-pick3">
+          <div class="card-body">
+            <h4 class="card-title">Galaxy Note10</h4>
+            <h5 class="card-text ">Introducing Next Gen Power</h5>
+            <div class="d-flex mt-5">
+              <a
+                href="#"
+                class="btn text-white"
+                style="background-color: rgb(230, 89, 136);"
+                id="register"
+                >View Details</a
+              >
+              <a href="#" class="p-1 ml-5 " id="register">View all Plans</a>
+              <span class="p-1 text-white" id="register">&raquo;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr  style="margin-top: 50px; background-color: palevioletred;" />
+    <div class="container">
+      <h1 class="text-center">Plans</h1>
+      <p class="text-center">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eos
+        reiciendis earum modi itaque impedit fuga nam nostrum illum cum?
+      </p>
+    </div>
+    <div class="container">
+      <div class="d-flex">
+        <div
+          class="card text-dark shadow mb-2 mr-2"
+          id="cards"
+          style="width: 300px; height: 400px;"
+        >
+          <img class="card-img" src="./images/plans-5g.png" alt="" />
+          <div class="card-img-overlay">
+            <div class="card-body pl-1 pb-0">
+              <i class="icon-Path-1105 text-white fa-3x"></i>
+              <!-- <i class="icon-Path-1105 fa-2x text-white mb-1"></i> -->
+            </div>
+          </div>
+          <h4 class="pl-3 pt-4"><strong>5G Plans</strong></h4>
+          <p class="pl-3">
+            Starting from KD 35 monthly Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+          <a
+            href="#"
+            class="btn btn-outline ml-3 mt-1"
+
+            style="width: 150px; border-radius: 8px;  border: solid 1px palevioletred;"
+            id="register"
+            >Register Now</a
+          >
+          <div class="d-flex ml-5">
+            <a href="#" class="p-1 ml-5 text-dark" id="register"
+              >All Smart Phones</a
+            >
+            <span class="p-1 text-dark" id="register">&raquo;</span>
+          </div>
+        </div>
+
+        <div
+          class="card text-dark shadow mb-2 mr-2 mt-5"
+          id="cards"
+          style="width: 300px; height: 300px;"
+        >
+          <i class="fas fa-globe text-dark fa-2x mt-4 ml-4"></i>
+          <h4 class="pl-3 pt-4">
+            <strong
+              >For KD 10 monthly, get 10GB and 250 local minutes on 4G</strong
+            >
+          </h4>
+          <p class="pl-3">Starting from KD 35 monthly</p>
+          <a
+            href="#"
+            class="btn btn-outline ml-3 mt-1"
+            style="width: 150px; border-radius: 8px;   border: solid 1px palevioletred;"
+            id="register"
+            >Register Now</a
+          >
+        </div>
+        <div
+          class="card text-dark shadow mb-2 mr-2 mt-5"
+          id="cards"
+          style="width: 300px; height: 300px;"
+        >
+          <i class="fas fa-globe text-dark fa-2x mt-4 ml-4"></i>
+          <h4 class="pl-3 pt-4">
+            <strong
+              >For KD 10 monthly, get 10GB and 250 local minutes on 4G</strong
+            >
+          </h4>
+          <p class="pl-3">Starting from KD 35 monthly</p>
+          <a
+            href="#"
+            class="btn btn-outline ml-3 mt-1"
+            style="width: 150px; border-radius: 8px;   border: solid 1px palevioletred;"
+            id="register"
+            >Register Now</a
+          >
+        </div>
+        <div
+          class="card text-dark shadow mb-2 mr-2 mt-5"
+          id="cards"
+          style="width: 300px; height: 300px;"
+        >
+          <i class="fas fa-globe text-dark fa-2x mt-4 ml-4"></i>
+          <h4 class="pl-3 pt-4">
+            <strong
+              >For KD 10 monthly, get 10GB and 250 local minutes on 4G</strong
+            >
+          </h4>
+          <p class="pl-3">Starting from KD 35 monthly</p>
+          <a
+            href="#"
+            class="btn btn-outline ml-3 mt-1"
+            style="width: 150px; border-radius: 8px;   border: solid 1px palevioletred;"
+            id="register"
+          >
+            Register Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light mt-4">
+      <div class="container ">
+        <div class=" text-center pt-2 ">
+          <h2 class="">Products</h2>
+          <div class="d-flex" style="flex-direction: row;">
+            <p style="font-size:12px;margin-left:40px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              commodi illum culpa perspiciatis molestiae. Quam voluptates
+              quisquam eos at necessitatibus, dolores accusamus.
+            </p>
+            <a
+              href="#"
+              style="text-decoration: none;font-size: 12px; margin-left: 10px; "
+              >View all Products<small class="ml-1">&raquo;</small></a
+            >
+          </div>
+        </div>
+        <div class="container d-flex p-5">
+          <div class="card text-white mr-2 shadow">
+            <img class="card-img" src="./images/product1.png" alt="" />
+            <div class="card-img-overlay">
+              <h5 class="card-text " style="margin-bottom: 176px;">
+                Apple Watch 44mm Cellular Available in our online Shop
+              </h5>
+              <p class="card-text mt-5">
+                <small class="text-white"
+                  >Unlimited 5G for only KD 24 only</small
+                >
+              </p>
+              <button class="btn text-white" style="background-color: palevioletred;">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="card text-white mr-2  ">
+            <img class="card-img" src="./images/product2.png" alt="" />
+            <div class="card-img-overlay">
+              <h5 class="card-text" style="margin-bottom: 176px;">
+                Stay Healthy with iHealth Clear
+              </h5>
+              <p class="card-text mt-5">
+                <small class="text-white"
+                  >Measure your Blood presure and Manage Results</small
+                >
+              </p>
+              <button class="btn text-white" style="background-color: palevioletred;">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="card text-white mr-2 ">
+            <img class="card-img" src="./images/product3.png" alt="" />
+            <div class="card-img-overlay">
+              <h5 class="card-text" style="margin-bottom: 200px;">
+                Control your smart Home through voice
+              </h5>
+              <p class="card-text mt-5">
+                <small class="text-white"
+                  >Google Home mini Available online</small
+                >
+              </p>
+              <button class="btn text-white" style="background-color: palevioletred;">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="card text-white ">
+            <img class="card-img" src="./images/product4.png" alt="" />
+            <div class="card-img-overlay">
+              <h5 class="card-text" style="margin-bottom: 200px;">
+                iTunes Cards
+              </h5>
+              <p class="card-text mt-5">
+                <small class="text-white"
+                  >iTunes Gift Crds and electric gift cards are Available</small
+                >
+              </p>
+              <button class="btn text-white" style="background-color: palevioletred;">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="background: palevioletred; margin-top: 30px;" />
+    <div class="container p-2">
+      <h4 class=" text-center">ZAIN LIFE</h4>
+      <div class="d-flex">
+        <p class=" text-center" style="font-size: 12px
+        ;">
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, maiores tenetur aspernatur, expedita, dicta earum ea hic ipsum cum non blanditiis a delectus exercitationem doloribus?
+        </p>
+        <a
+        href="#"
+        style="text-decoration: none;font-size: 12px; margin-left: 20px; "
+        >View all Products<small class="ml-1">&raquo;</small></a
+      >
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex">
+      <img
+        src="./images/zain-life-01.png"
+        id="zain-life"
+        height="400px"
+        width="674px"
+      />
+      <img
+        src="./images/zain-life-02.png"
+        id="zain-life"
+        height="400px"
+        width="674px"
+      />
+    </div> -->
+   
+    <br />
+    <br />
+
+    <div class="parent" id="gradient">
+      <div class="container">
+        <h4 class="text-center">OFFER</h4>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla
+          ab atque officia facilis optio accusamus, quibusdam eos debitis non
+          necessitatibus ad, error porro fugiat earum amet ex placeat sapiente.
+        </p>
+      </div>
+      <div class="element">
+        <div class="container ">
+          <div class="d-flex " id="position">
+            <div class="card mr-2 shadow " id="cards">
+              <img class="card-img-top" src="./images/offer1.png" alt="" />
+              <div class="card-body">
+                <div class="d-flex">
+                  <i class="icon-sticker  fa-3x "></i>
+                <h4 class="card-title ml-3"><strong>Exclusive Offers</strong></h4></div>
+                <p class="card-text ml-5">
+                  made espacially for you
+                </p>
+                <a class="btn btn-success" id="a-tag5" href="#">View Details</a>
+              </div>
+            </div>
+            <div class="card shadow" id="cards">
+              <img class="card-img-top" src="./images/offer2.png" alt="" />
+              <div class="card-body">
+                <div class="d-flex">
+                  <i class="icon-sticker  fa-3x "></i>
+                <h4 class="card-title ml-3"><strong>Play Eezee</strong></h4></div>
+                <p class="card-text ml-5"> 
+                  Win wonderful and instant prizes by playing fun free games
+                </p>
+                <a class="btn btn-success " id="a-tag5" href="#"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-relative" >
+        
+         <div class="container" >
+           <div class="d-flex" id="footer-absolute">
+             <section class="pl-5 pt-5 pr-5">
+               <ul  class="text-white"style="list-style: none; text-decoration: none;">
+                 <li class="h4 mb-3">
+                  <strong>Products</strong>
+                 </li>
+                 <li><a href="#"  class="text-white " ><small>SmartPhones</small></a></li>
+                 <li><a href="#"  class="text-white"><small>Home Broadbands</small></a></li>
+                 <li><a href="#"  class="text-white"><small>Sim Cards</small></a></li>
+                 <li><a href="#"  class="text-white"><small>Tablets</small></a></li>
+                 <li><a href="#"  class="text-white"><small>Gaming</small></a></li>
+                 <li><a href="#"  class="text-white"><small>E Cards</small></a></li>
+                 <li><a href="#"  class="text-white"><small>Add ons</small></a></li>
+                 <li><a href="#"  class="text-white"><small>Accessories</small></a></li>
+               </ul>
+             </section>
+             <section class="pl-5 pt-5 pr-5">
+             <ul  class="text-white"style="list-style: none; text-decoration:none;">
+              <li class="h4 mb-3">
+                <strong>Plans</strong>
+              </li>
+              <li><a href="#"  class="text-white"><small> Monthly</small></a></li>
+              <li><a href="#"  class="text-white"><small> As You Go</small></a></li>
+              <li><a href="#"  class="text-white"><small>Roaming & International</small></a></li>
+              <li class="mt-3" ><a href="#"  class="text-white"><strong>Zain Life</strong></a></li>
+              <li><a href="#"  class="text-white"><strong>Offers</strong></a></li>
+              <li><a href="#"  class="text-white"><strong>5G</strong></a></li>
+           
+            </ul>
+            </section>
+            <section class="pl-5 pt-5 pr-5">
+              <ul  class="text-white"style="list-style: none; text-decoration: none;">
+                <li class="h4 mb-3">
+                  <strong>Support</strong>
+                </li>
+                <li><a href="#"  class="text-white" ><small>Chat</small></a></li>
+                <li><a href="#"  class="text-white"><small>Locate a branch</small></a></li>
+                <li><a href="#"  class="text-white"><small>Order Tracking</small></a></li>
+                <li><a href="#"  class="text-white"><small>Contact us</small></a></li>
+                <li><a href="#"  class="text-white"><small>FAQs</small></a></li>
+                <li><a href="#"  class="text-white"><small>Careers</small></a></li>
+                <li class="mt-3"><a href="#"  class="text-white"><strong>Discover Zain</strong></a></li>
+               
+              </ul>
+            </section>
+            <section class="pl-5 pt-5 pr-5">
+              <ul  class="text-white"style="list-style: none; text-decoration: none;">
+                <li class="h4 mb-3"><strong>Contact With Us</strong> 
+                </li>
+                <div class="d-flex">
+                  <i class="icon-Group-1564 text-white fa-2x mt-3"></i>
+                  <i class="icon-facebook text-white fa-2x mt-3 ml-3"></i>
+                  <i class="icon-twitter text-white fa-2x  mt-3 ml-3"></i>
+                </div>
+                <div class="d-flex">
+                  <button class="btn btn-outline mt-4 text-white">
+                    <i class="fas fa-user-alt"></i> My Zain
+                  </button>
+
+                </div>
+                <li><a href="#"  ><small>Login</small></a></li>
+                <li><a href="#"  ><small>Register</small></a></li>
+                <hr class="mt-4" style="background-color: white;"/>
+                <li class="h4 text-white mt-2"><strong>Track My Order</strong></li>
+                <div class="input-group mt-3">
+                  
+                  <input type="text" class="form-control" placeholder="Email Order Numer" aria-label="Username" aria-describedby="basic-addon1"><div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon1"><strong>-></strong></span>
+                  </div>
+                </div>
+                
+              </ul>
+            </section>
+           
+           </div>
+           <hr class="mt-1" style="background-color: white;"/>
+           <nav class="navbar nav navbar-expand-md navbar-transprent">
+            <div class="container ">
+              <img  src="./images/zain_logo.svg" />
+              <div class="d-flex  ">
+                <p class="text-white float-left">&copy; Copyright &copy; 2020 All Rights Reserved</p>
+                <a href="#" class="text-white ml-3">POLICY</a>
+                <a href="#" class="text-white ml-3">TERMS & CONDITIONS</a>
+              </div>
+           
+            </div>
+          </nav>
+         </div>
+       
+    </div>
+  </body>
+</html>

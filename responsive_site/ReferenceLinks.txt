@@ -1,0 +1,9 @@
+Desktop UX:
+https://xd.adobe.com/spec/96e99405-bbd1-4cce-4252-29605964caea-e0d8/screen/0c72140d-73af-4ac1-b03f-d202630b7bd8/Homepage-A
+
+Mobile UX:
+https://xd.adobe.com/spec/96e99405-bbd1-4cce-4252-29605964caea-e0d8/screen/6e997534-50e0-4aa2-9df6-9bf4c3fe96d9/Home-mobile-4
+
+1. Make Webpage Responsive
+2. Use Bootstrap
+3. Use Icons and Fonts as per Design
